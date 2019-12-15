@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from cong import models
+
+@admin.register(models.Love)
+class LoveAdmin(admin.ModelAdmin):
+    list_display = ("title", "content")

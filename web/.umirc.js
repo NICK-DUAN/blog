@@ -5,10 +5,10 @@ export default {
   routes: [
     {
       path: '/',
-      component: '../layouts/index',
+      component: '../layouts/BasicLayout',
       routes: [
-        { path: '/', component: '../pages/index' },
-        { path: '/history', component: '../pages/orange/index' },
+        { path: '/', component: '../pages/blog/blogList' },
+        { path: '/users', component: '../pages/users/users' },
       ]
     }
   ],
@@ -16,13 +16,17 @@ export default {
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
       antd: true,
-      dva: false,
+      dva: true,
       dynamicImport: false,
       title: 'web',
       dll: false,
       
       routes: {
         exclude: [
+          /models\//,
+          /services\//,
+          /model\.(t|j)sx?$/,
+          /service\.(t|j)sx?$/,
           /components\//,
         ],
       },

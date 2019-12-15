@@ -7,8 +7,9 @@ class Love(models.Model):
     create_time = models.DateTimeField(auto_now_add=True)
     update_time = models.DateTimeField(auto_now=True)
 
-    class Metadata:
+    class Meta:
         verbose_name = "土味情话"
+        verbose_name_plural = verbose_name
 
     def __str__(self):
         return self.title

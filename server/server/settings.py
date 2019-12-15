@@ -24,7 +24,7 @@ SECRET_KEY = '#pl6-(b30%p6vjdv(pcu(b)8lr9l)66q(33sz8jyamlrylg--z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+LANGUAGE_CODE = 'zh-Hans'
 ALLOWED_HOSTS = ['*', ]
 
 

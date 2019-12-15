@@ -7,9 +7,8 @@
 
 .welcome {
   height: 512px;
-  background: url(../assets/love.jpg) no-repeat center 0;
-  background-size: 600px 512px;
-  z-index: -1;
+  background: url(../assets/yay.jpg) no-repeat center 0;
+  background-size: 512px 512px;
 }
 
 .list {
