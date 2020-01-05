@@ -1,13 +1,25 @@
 
 import styles from './users.css';
+import React from 'react';
 import router from 'umi/router';
+import { Table } from 'antd';
 
-export default function() {
-  return (
-    <div className={styles.normal}>
-      <h1>Page users</h1>
-      <h2>test</h2>
-      <button onClick={() => { router.goBack(); }}>go back</button>
-    </div>
-  );
+
+class UserList extends React.Component {
+  constructor(props) {
+    super(props);
+    this.tableColumns = [{
+      title: "ID",
+      key: 'id',
+      dataIndex: "id",
+    }]
+  }
+  render(){
+    return(
+      <div>
+        <Table/>
+      </div>
+    )
+  }
 }
+export default UserList;

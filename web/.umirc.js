@@ -9,6 +9,7 @@ export default {
       routes: [
         { path: '/', component: '../pages/blog/blogList' },
         { path: '/users', component: '../pages/users/users' },
+        { path: '/register', component: '../pages/users/register' },
       ]
     }
   ],
